@@ -5,7 +5,11 @@ import './App.css';
 function App() {
   const clicks = () => {
     window.top.dummy();
-    // window.postMessage("child frame", "*");
+    window.postMessage("child frame", "*");
+  }
+  
+  const clicks = () => {
+    window.postMessage("child frame", "*");
   }
 
   return (
@@ -17,6 +21,9 @@ function App() {
         </p>
         <button onClick={clicks}>
           click here
+        </button>
+        <button onClick={clicks2}>
+          click here2
         </button>
       </header>
     </div>
