@@ -8,7 +8,7 @@ function App() {
     window.postMessage("child frame", "*");
   }
   
-  const clicks = () => {
+  const clicks2 = () => {
     window.postMessage("child frame", "*");
   }
 
